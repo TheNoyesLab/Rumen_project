@@ -1,0 +1,112 @@
+ID,Sample,Run,Description,Species,Study,Notes,Sequencing
+hessSRR094166,hessSRR094166,SRR094166,fiber_attached,bovine ,Hess,,WGS
+hessSRR094403,hessSRR094403,SRR094403,fiber_attached,bovine ,Hess,,WGS
+hessSRR094405,hessSRR094405,SRR094405,fiber_attached,bovine ,Hess,,WGS
+hessSRR094415,hessSRR094415,SRR094415,fiber_attached,bovine ,Hess,,WGS
+hessSRR094416,hessSRR094416,SRR094416,fiber_attached,bovine ,Hess,,WGS
+hessSRR094417,hessSRR094417,SRR094417,fiber_attached,bovine ,Hess,,WGS
+hessSRR094418,hessSRR094418,SRR094418,fiber_attached,bovine ,Hess,,WGS
+hessSRR094419,hessSRR094419,SRR094419,fiber_attached,bovine ,Hess,,WGS
+hessSRR094424,hessSRR094424,SRR094424,fiber_attached,bovine ,Hess,,WGS
+hessSRR094427,hessSRR094427,SRR094427,fiber_attached,bovine ,Hess,,WGS
+hessSRR094428,hessSRR094428,SRR094428,fiber_attached,bovine ,Hess,,WGS
+hessSRR094429,hessSRR094429,SRR094429,fiber_attached,bovine ,Hess,,WGS
+hessSRR094437,hessSRR094437,SRR094437,fiber_attached,bovine ,Hess,,WGS
+hessSRR094926,hessSRR094926,SRR094926,fiber_attached,bovine ,Hess,,WGS
+shiSRR1138694,shiSRR1138694,SRR1138694,low methane producing,ovine,Shi,,RNA-Seq
+shiSRR1138697,shiSRR1138697,SRR1138697,low methane producing,ovine,Shi,,RNA-Seq
+shiSRR1206249,shiSRR1206249,SRR1206249,high methane producing,ovine,Shi,,RNA-Seq
+shiSRR1206671,shiSRR1206671,SRR1206671,high methane producing,ovine,Shi,,WGS
+shiSRR1222429,shiSRR1222429,SRR1222429,low methane producing,ovine,Shi,,WGS
+shiSRR1222431,shiSRR1222431,SRR1222431,high methane producing,ovine,Shi,,WGS
+shiSRR1267595,shiSRR1267595,SRR1267595,low methane producing,ovine,Shi,,WGS
+shiSRR873450,shiSRR873450,SRR873450,low methane producing,ovine,Shi,,RNA-Seq
+shiSRR873451,shiSRR873451,SRR873451,low methane producing,ovine,Shi,,RNA-Seq
+shiSRR873452,shiSRR873452,SRR873452,low methane producing,ovine,Shi,,RNA-Seq
+shiSRR873453,shiSRR873453,SRR873453,low methane producing,ovine,Shi,,RNA-Seq
+shiSRR873454,shiSRR873454,SRR873454,low methane producing,ovine,Shi,,RNA-Seq
+shiSRR873455,shiSRR873455,SRR873455,low methane producing,ovine,Shi,,RNA-Seq
+shiSRR873456,shiSRR873456,SRR873456,low methane producing,ovine,Shi,,RNA-Seq
+shiSRR873457,shiSRR873457,SRR873457,low methane producing,ovine,Shi,,RNA-Seq
+shiSRR873458,shiSRR873458,SRR873458,high methane producing,ovine,Shi,,RNA-Seq
+shiSRR873459,shiSRR873459,SRR873459,high methane producing,ovine,Shi,,RNA-Seq
+shiSRR873460,shiSRR873460,SRR873460,high methane producing,ovine,Shi,,RNA-Seq
+shiSRR873461,shiSRR873461,SRR873461,high methane producing,ovine,Shi,,RNA-Seq
+shiSRR873462,shiSRR873462,SRR873462,high methane producing,ovine,Shi,,RNA-Seq
+shiSRR873463,shiSRR873463,SRR873463,high methane producing,ovine,Shi,,RNA-Seq
+shiSRR873464,shiSRR873464,SRR873464,high methane producing,ovine,Shi,,RNA-Seq
+shiSRR873465,shiSRR873465,SRR873465,high methane producing,ovine,Shi,,RNA-Seq
+shiSRR873595,shiSRR873595,SRR873595,low methane producing,ovine,Shi,,WGS
+shiSRR873596,shiSRR873596,SRR873596,low methane producing,ovine,Shi,,WGS
+shiSRR873597,shiSRR873597,SRR873597,low methane producing,ovine,Shi,,WGS
+shiSRR873598,shiSRR873598,SRR873598,low methane producing,ovine,Shi,,WGS
+shiSRR873599,shiSRR873599,SRR873599,low methane producing,ovine,Shi,,WGS
+shiSRR873600,shiSRR873600,SRR873600,low methane producing,ovine,Shi,,WGS
+shiSRR873601,shiSRR873601,SRR873601,low methane producing,ovine,Shi,,WGS
+shiSRR873602,shiSRR873602,SRR873602,low methane producing,ovine,Shi,,WGS
+shiSRR873603,shiSRR873603,SRR873603,high methane producing,ovine,Shi,,WGS
+shiSRR873604,shiSRR873604,SRR873604,high methane producing,ovine,Shi,,WGS
+shiSRR873605,shiSRR873605,SRR873605,high methane producing,ovine,Shi,,WGS
+shiSRR873606,shiSRR873606,SRR873606,high methane producing,ovine,Shi,,WGS
+shiSRR873607,shiSRR873607,SRR873607,high methane producing,ovine,Shi,,WGS
+shiSRR873608,shiSRR873608,SRR873608,high methane producing,ovine,Shi,,WGS
+shiSRR873609,shiSRR873609,SRR873609,high methane producing,ovine,Shi,,WGS
+shiSRR873610,shiSRR873610,SRR873610,high methane producing,ovine,Shi,,WGS
+stewartERR2027889,stewartERR2027889,ERR2027889,low methane producing,bovine ,Stewart,2013E Luing Medium Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027890,stewartERR2027890,ERR2027890,low methane producing,bovine ,Stewart,2013E Luing Medium Concentration Diet Low Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027891,stewartERR2027891,ERR2027891,high methane producing,bovine ,Stewart,2013E Charolais Medium Concentration Diet High Emitter High Feed Conversion Ratio,WGS
+stewartERR2027892,stewartERR2027892,ERR2027892,high methane producing,bovine ,Stewart,2013E Charolais Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027893,stewartERR2027893,ERR2027893,low methane producing,bovine ,Stewart,2013E Luing High Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027894,stewartERR2027894,ERR2027894,low methane producing,bovine ,Stewart,2013E Charolais High Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027895,stewartERR2027895,ERR2027895,low methane producing,bovine ,Stewart,2013E Charolais High Concentration Diet Low Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027896,stewartERR2027896,ERR2027896,low methane producing,bovine ,Stewart,2013E Luing High Concentration Diet Low Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027897,stewartERR2027897,ERR2027897,high methane producing,bovine ,Stewart,2013E Luing Medium Concentration Diet High Emitter High Feed Conversion Ratio,WGS
+stewartERR2027898,stewartERR2027898,ERR2027898,high methane producing,bovine ,Stewart,2013E Charolais Medium Concentration Diet High Emitter High Feed Conversion Ratio,WGS
+stewartERR2027899,stewartERR2027899,ERR2027899,low methane producing,bovine ,Stewart,2013E Charolais High Concentration Diet Low Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027900,stewartERR2027900,ERR2027900,low methane producing,bovine ,Stewart,2013E Charolais High Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027901,stewartERR2027901,ERR2027901,low methane producing,bovine ,Stewart,2013E Luing High Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027902,stewartERR2027902,ERR2027902,low methane producing,bovine ,Stewart,2013E Luing High Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027903,stewartERR2027903,ERR2027903,high methane producing,bovine ,Stewart,2013E Luing Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027904,stewartERR2027904,ERR2027904,high methane producing,bovine ,Stewart,2013E Charolais Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027905,stewartERR2027905,ERR2027905,low methane producing,bovine ,Stewart,2013E Luing High Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027906,stewartERR2027906,ERR2027906,low methane producing,bovine ,Stewart,2013E Charolais High Concentration Diet Low Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027907,stewartERR2027907,ERR2027907,low methane producing,bovine ,Stewart,2013E Charolais High Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027908,stewartERR2027908,ERR2027908,low methane producing,bovine ,Stewart,2013E Luing High Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027909,stewartERR2027909,ERR2027909,high methane producing,bovine ,Stewart,2013E Charolais Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027910,stewartERR2027910,ERR2027910,high methane producing,bovine ,Stewart,2013E Charolais Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027911,stewartERR2027911,ERR2027911,high methane producing,bovine ,Stewart,2013E Luing Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027912,stewartERR2027912,ERR2027912,low methane producing,bovine ,Stewart,2014E Luing Medium Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027913,stewartERR2027913,ERR2027913,high methane producing,bovine ,Stewart,2014E Limousin Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027914,stewartERR2027914,ERR2027914,high methane producing,bovine ,Stewart,2014E Limousin Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027915,stewartERR2027915,ERR2027915,high methane producing,bovine ,Stewart,2014E Limousin Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027916,stewartERR2027916,ERR2027916,high methane producing,bovine ,Stewart,2014E Aberdeen Angus Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027917,stewartERR2027917,ERR2027917,high methane producing,bovine ,Stewart,2014E Aberdeen Angus Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027918,stewartERR2027918,ERR2027918,high methane producing,bovine ,Stewart,2014E Limousin Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027919,stewartERR2027919,ERR2027919,low methane producing,bovine ,Stewart,2014E Aberdeen Angus Medium Concentration Diet Low Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027920,stewartERR2027920,ERR2027920,low methane producing,bovine ,Stewart,2014E Aberdeen Angus Medium Concentration Diet Low Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027921,stewartERR2027921,ERR2027921,high methane producing,bovine ,Stewart,2014E Aberdeen Angus Medium Concentration Diet High Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027922,stewartERR2027922,ERR2027922,high methane producing,bovine ,Stewart,2014E Aberdeen Angus Medium Concentration Diet High Emitter High Feed Conversion Ratio,WGS
+stewartERR2027923,stewartERR2027923,ERR2027923,high methane producing,bovine ,Stewart,2014E Limousin Medium Concentration Diet High Emitter High Feed Conversion Ratio,WGS
+stewartERR2027924,stewartERR2027924,ERR2027924,high methane producing,bovine ,Stewart,2014E Aberdeen Angus Medium Concentration Diet High Emitter High Feed Conversion Ratio,WGS
+stewartERR2027925,stewartERR2027925,ERR2027925,high methane producing,bovine ,Stewart,2014E Limousin Medium Concentration Diet High Emitter High Feed Conversion Ratio,WGS
+stewartERR2027926,stewartERR2027926,ERR2027926,high methane producing,bovine ,Stewart,2014E Aberdeen Angus Medium Concentration Diet High Emitter High Feed Conversion Ratio,WGS
+stewartERR2027927,stewartERR2027927,ERR2027927,low methane producing,bovine ,Stewart,2014E Limousin Medium Concentration Diet Low Emitter High Feed Conversion Ratio,WGS
+stewartERR2027928,stewartERR2027928,ERR2027928,low methane producing,bovine ,Stewart,2014E Aberdeen Angus Medium Concentration Diet Low Emitter Low Feed Conversion Ratio,WGS
+stewartERR2027929,stewartERR2027929,ERR2027929,high methane producing,bovine ,Stewart,2014E Limousin Medium Concentration Diet High Emitter High Feed Conversion Ratio,WGS
+stewartERR2027930,stewartERR2027930,ERR2027930,high methane producing,bovine ,Stewart,2013E Limousin Medium Concentration Diet High Emitter High Feed Conversion Ratio,WGS
+stewartERR2282092,stewartERR2282092,ERR2282092,Rumen metagenome collected from beef cow at a Scottish abattoir,bovine ,Stewart,Rumen metagenome collected from beef cow at a Scottish abattoir,WGS
+stewartERR2530126,stewartERR2530126,ERR2530126,Rumen metagenome collected from beef cow at a Scottish abattoir,bovine ,Stewart,Rumen metagenome collected from beef cow at a Scottish abattoir,HiC
+stewartERR2530127,stewartERR2530127,ERR2530127,Rumen metagenome collected from beef cow at a Scottish abattoir,bovine ,Stewart,Rumen metagenome collected from beef cow at a Scottish abattoir,HiC
+wallaceERR2027889,wallaceERR2027889,ERR2027889,Metagenomic sequencing of the rumen of Scottish cattle.,bovine ,Wallace,not in blakes metadata,WGS
+wallaceERR2027890,wallaceERR2027890,ERR2027890,Metagenomic sequencing of the rumen of Scottish cattle.,bovine ,Wallace,not in blakes metadata,WGS
+wallaceERR2282092,wallaceERR2282092,ERR2282092,Metagenomic sequencing of the rumen of Scottish cattle.,bovine ,Wallace,not in blakes metadata,WGS
+wallaceERR2530126,wallaceERR2530126,ERR2530126,Metagenomic sequencing of the rumen of Scottish cattle.,bovine ,Wallace,not in blakes metadata,HiC
+wallaceERR2530127,wallaceERR2530127,ERR2530127,Metagenomic sequencing of the rumen of Scottish cattle.,bovine ,Wallace,not in blakes metadata,HiC
+wallaceERR983262,wallaceERR983262,ERR983262,low methane producing,bovine ,Wallace,"Aberdine angus high concentration diet, low methane emitter",WGS
+wallaceERR983263,wallaceERR983263,ERR983263,high methane producing,bovine ,Wallace,"Aberdine angus high concentration diet, high methane emitter",WGS
+wallaceERR983264,wallaceERR983264,ERR983264,low methane producing,bovine ,Wallace,Limousine high concentration diet low methane emitter ,WGS
+wallaceERR983265,wallaceERR983265,ERR983265,high methane producing,bovine ,Wallace,Limousine high concentration diet high methane emitter ,WGS
+wallaceERR983266,wallaceERR983266,ERR983266,low methane producing,bovine ,Wallace,Aberdine angus mixed forage low methane emitter,WGS
+wallaceERR983267,wallaceERR983267,ERR983267,high methane producing,bovine ,Wallace,Aberdine angus mixed forage high methane emitter,WGS
+wallaceERR983268,wallaceERR983268,ERR983268,low methane producing,bovine ,Wallace,Limousine mixed forage low methane emitter,WGS
+wallaceERR983269,wallaceERR983269,ERR983269,high methane producing,bovine ,Wallace,Limousine mixed forage high methane emitter,WGS
