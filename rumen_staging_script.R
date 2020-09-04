@@ -40,23 +40,6 @@ amr_metadata_filepath = 'rumen_sample_metadata.csv'
 # to use for EXPLORATORY analysis (NMDS, PCA, alpha rarefaction, barplots)
 # NOTE: Exploratory variables cannot be numeric. 
 
-#AMR_exploratory_analyses = list(
-#  # Analysis 1
-#  # Description: 
-#  list(
-#    name = 'Variable1',
-#    subsets = list(),
-#    exploratory_var = 'Variable1'
-#  ),
-#  # Analysis 2
-#  # Description: 
-#  list(
-#    name = 'Variable2_Variable1_Subset',
-#    subsets = list('Variable1 == Value1'),
-#    exploratory_var = 'Variable2'
-#  )
-#)
-
 
 AMR_exploratory_analyses = list(
   # Analysis
@@ -138,6 +121,7 @@ microbiome_exploratory_analyses = list(
 # parent variable then child variable without a space inbetween, for example:
 # PVar1Cvar1 where the model matrix equation is ~ 0 + Pvar1.
 
+# This is not updated for the rumen data
 AMR_statistical_analyses = list(
   # Analysis 1
   # Description: 
@@ -210,8 +194,9 @@ source('scripts/metagenomeSeq_kraken.R')
 # Melted counts are contained in these data.table objects "amr_melted_analytic" "microbiome_melted_analytic"
 
 ## Run code to make some exploratory figures and output count matrices.
-source('scripts/print_microbiome_figures.R')
-source('scripts/print_AMR_figures.R')
+# These are commented out for now because they take a long time to run.
+#source('scripts/print_microbiome_figures.R')
+#source('scripts/print_AMR_figures.R')
 
 
 ### Start of code for extra figures
