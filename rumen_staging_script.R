@@ -73,6 +73,38 @@ AMR_exploratory_analyses = list(
     subsets = list(),
     exploratory_var = 'Sequencing',
     order = ''
+  ),
+  # Shi Analysis
+  # Description: 
+  list(
+    name = 'Shi_Description',
+    subsets = list('Study == Shi'),
+    exploratory_var = 'Description',
+    order = ''
+  ),
+  # Hess Analysis
+  # Description: 
+  list(
+    name = 'Hess_Description',
+    subsets = list('Study == Hess'),
+    exploratory_var = 'Description',
+    order = ''
+  ),
+  # Stewart Analysis
+  # Description: 
+  list(
+    name = 'Stewart_Description',
+    subsets = list('Study == Stewart'),
+    exploratory_var = 'Description',
+    order = ''
+  ),
+  # Wallace Analysis
+  # Description: 
+  list(
+    name = 'Wallace_Description',
+    subsets = list('Study == Wallace'),
+    exploratory_var = 'Description',
+    order = ''
   )
 )
 
@@ -109,6 +141,38 @@ microbiome_exploratory_analyses = list(
     name = 'Sequencing',
     subsets = list(),
     exploratory_var = 'Sequencing',
+    order = ''
+  ),
+  # Shi Analysis
+  # Description: 
+  list(
+    name = 'Shi_Description',
+    subsets = list('Study == Shi'),
+    exploratory_var = 'Description',
+    order = ''
+  ),
+  # Hess Analysis
+  # Description: 
+  list(
+    name = 'Hess_Description',
+    subsets = list('Study == Hess'),
+    exploratory_var = 'Description',
+    order = ''
+  ),
+  # Stewart Analysis
+  # Description: 
+  list(
+    name = 'Stewart_Description',
+    subsets = list('Study == Stewart'),
+    exploratory_var = 'Description',
+    order = ''
+  ),
+  # Wallace Analysis
+  # Description: 
+  list(
+    name = 'Wallace_Description',
+    subsets = list('Study == Wallace'),
+    exploratory_var = 'Description',
     order = ''
   )
 )
@@ -195,8 +259,8 @@ source('scripts/metagenomeSeq_kraken.R')
 
 ## Run code to make some exploratory figures and output count matrices.
 # These are commented out for now because they take a long time to run.
-#source('scripts/print_microbiome_figures.R')
-#source('scripts/print_AMR_figures.R')
+source('scripts/print_microbiome_figures.R')
+source('scripts/print_AMR_figures.R')
 
 
 ### Start of code for extra figures
