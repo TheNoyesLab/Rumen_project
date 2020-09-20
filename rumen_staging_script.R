@@ -1,4 +1,4 @@
-## Start with this staging file to set up your analysis. 
+## Start with this staging file to set up your analysis.
 # Source the utility functions file, which should be in the scripts folder with this file
 source('scripts/meg_utility_functions.R')
 source('scripts/load_libraries.R')
@@ -18,7 +18,7 @@ sample_column_id = 'ID'
 ####################
 ## The files you want to use for input to this (for the MEG group analyses)
 ## is the AMR_analytic_matrix.csv. So you should have pulled these files from the output of the nextflow pipeline
-## and you are now performing this analysis on your local machine. 
+## and you are now performing this analysis on your local machine.
 
 ## For the AMR analysis, you will also need to download the megares_annotations.csv
 ## file from the MEGARes website; the annotation file must be from the same version
@@ -35,15 +35,15 @@ amr_metadata_filepath = 'rumen_sample_metadata.csv'
 ## to change other, more subtle variables in the exploratory or
 ## statistical functions.
 
-# The following is a list of analyses based on variables in 
+# The following is a list of analyses based on variables in
 # your metadata.csv file that you want
 # to use for EXPLORATORY analysis (NMDS, PCA, alpha rarefaction, barplots)
-# NOTE: Exploratory variables cannot be numeric. 
+# NOTE: Exploratory variables cannot be numeric.
 
 
 AMR_exploratory_analyses = list(
   # Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Study',
     subsets = list(),
@@ -51,7 +51,7 @@ AMR_exploratory_analyses = list(
     order = ''
   ),
   # Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Description',
     subsets = list(),
@@ -59,7 +59,7 @@ AMR_exploratory_analyses = list(
     order = ''
   ),
   # Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Species',
     subsets = list(),
@@ -67,7 +67,7 @@ AMR_exploratory_analyses = list(
     order = ''
   ),
   # Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Sequencing',
     subsets = list(),
@@ -75,7 +75,7 @@ AMR_exploratory_analyses = list(
     order = ''
   ),
   # Shi Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Shi_Description',
     subsets = list('Study == Shi'),
@@ -83,7 +83,7 @@ AMR_exploratory_analyses = list(
     order = ''
   ),
   # Hess Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Hess_Description',
     subsets = list('Study == Hess'),
@@ -91,7 +91,7 @@ AMR_exploratory_analyses = list(
     order = ''
   ),
   # Stewart Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Stewart_Description',
     subsets = list('Study == Stewart'),
@@ -99,7 +99,7 @@ AMR_exploratory_analyses = list(
     order = ''
   ),
   # Wallace Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Wallace_Description',
     subsets = list('Study == Wallace'),
@@ -112,7 +112,7 @@ AMR_exploratory_analyses = list(
 
 microbiome_exploratory_analyses = list(
   # Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Study',
     subsets = list(),
@@ -120,7 +120,7 @@ microbiome_exploratory_analyses = list(
     order = ''
   ),
   # Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Description',
     subsets = list(),
@@ -128,7 +128,7 @@ microbiome_exploratory_analyses = list(
     order = ''
   ),
   # Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Species',
     subsets = list(),
@@ -136,7 +136,7 @@ microbiome_exploratory_analyses = list(
     order = ''
   ),
   # Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Sequencing',
     subsets = list(),
@@ -144,7 +144,7 @@ microbiome_exploratory_analyses = list(
     order = ''
   ),
   # Shi Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Shi_Description',
     subsets = list('Study == Shi'),
@@ -152,7 +152,7 @@ microbiome_exploratory_analyses = list(
     order = ''
   ),
   # Hess Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Hess_Description',
     subsets = list('Study == Hess'),
@@ -160,7 +160,7 @@ microbiome_exploratory_analyses = list(
     order = ''
   ),
   # Stewart Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Stewart_Description',
     subsets = list('Study == Stewart'),
@@ -168,7 +168,7 @@ microbiome_exploratory_analyses = list(
     order = ''
   ),
   # Wallace Analysis
-  # Description: 
+  # Description:
   list(
     name = 'Wallace_Description',
     subsets = list('Study == Wallace'),
@@ -188,7 +188,7 @@ microbiome_exploratory_analyses = list(
 # This is not updated for the rumen data
 AMR_statistical_analyses = list(
   # Analysis 1
-  # Description: 
+  # Description:
   list(
     name = 'Treatment',
     subsets = list(),
@@ -200,7 +200,7 @@ AMR_statistical_analyses = list(
 
 microbiome_statistical_analyses = list(
   # Analysis 1
-  # Description: 
+  # Description:
   list(
     name = 'Treatment',
     subsets = list(),
@@ -213,12 +213,20 @@ microbiome_statistical_analyses = list(
 ## Loading count tables
 
 # Where is the metadata file stored on your machine?
+
+# MEGARes
 amr_count_matrix_filepath = 'MEGARes_AMR_analytic_matrix.csv'
 # Name of the megares annotation file used for this project
 megares_annotation_filename = 'data/amr/megares_modified_annotations_v2.0.csv'
 source('scripts/metagenomeSeq_megaresv2.R')
+# Save MRExperiments to another object
 MEGARes_MRexperiment <- amr
 
+# Running the following command creates exploratory figures and outputs count matrices
+source('scripts/print_AMR_figures.R')
+# NOTE!
+##
+### After creating the exploratory figures, you'll need to rename the following folders; "graphs/" and "amr_matrices"
 
 # ACLAME (remove the step to remove sparse features)
 amr_count_matrix_filepath = 'ACLAME_rumen_analytic_matrix.csv'
@@ -226,6 +234,10 @@ amr_count_matrix_filepath = 'ACLAME_rumen_analytic_matrix.csv'
 megares_annotation_filename = 'data/amr/aclame_db_annotations.csv'
 source('scripts/metagenomeSeq_megaresv2.R')
 ACLAME_MRexperiment <- amr
+# NOTE!
+##
+### After creating the exploratory figures, you'll need to rename the following folders; "graphs/" and "amr_matrices"
+
 
 ## ICEBerg
 amr_count_matrix_filepath = 'ICEBerg_AMR_analytic_matrix.csv'
@@ -233,12 +245,16 @@ amr_count_matrix_filepath = 'ICEBerg_AMR_analytic_matrix.csv'
 megares_annotation_filename = 'data/amr/ICEBerg_db_annotations.csv'
 source('scripts/metagenomeSeq_megaresv2.R')
 ICEBerg_MRexperiment <- amr
+# NOTE!
+##
+### After creating the exploratory figures, you'll need to rename the following folders; "graphs/" and "amr_matrices"
 
-# Combined data
-allAMR_data <- mergeMRexperiments(MEGARes_MRexperiment, ACLAME_MRexperiment)
-allAMR_data <- mergeMRexperiments(allAMR_data, ICEBerg_MRexperiment)
+# Combined data, # this still causes an issue because "mergeMRexperiments()" does not merge rows by sample names
+# and will instead make new labels for each sample
+#allAMR_data <- mergeMRexperiments(MEGARes_MRexperiment, ACLAME_MRexperiment)
+#allAMR_data <- mergeMRexperiments(allAMR_data, ICEBerg_MRexperiment)
 
-source('scripts/metagenomeSeq_combined_resistome.R')
+#source('scripts/metagenomeSeq_combined_resistome.R')
 
 #################################
 ## Microbiome - 16S or kraken? ##
@@ -260,13 +276,13 @@ source('scripts/metagenomeSeq_kraken.R')
 ## Run code to make some exploratory figures and output count matrices.
 # These are commented out for now because they take a long time to run.
 source('scripts/print_microbiome_figures.R')
-source('scripts/print_AMR_figures.R')
+
 
 
 ### Start of code for extra figures
 
-setkey(amr_melted_raw_analytic,ID) 
-setkey(amr_melted_analytic,ID) 
+setkey(amr_melted_raw_analytic,ID)
+setkey(amr_melted_analytic,ID)
 
 setkey(microbiome_melted_analytic,ID)
 # Set keys for both metadata files
@@ -293,7 +309,7 @@ microbiome_phylum_sum$Name = droplevels(microbiome_phylum_sum$Name)
 microbiome_phylum_sum$Phylum <- microbiome_phylum_sum$Name
 #microbiome_phylum_sum[,percentage:= round(sum_class/total, digits=2) ,by=.(ID, Name) ] removes some with low proportions
 
-ggplot(microbiome_phylum_sum, aes(x = ID, y = percentage, fill = Phylum)) + 
+ggplot(microbiome_phylum_sum, aes(x = ID, y = percentage, fill = Phylum)) +
   geom_bar(stat = "identity")+
   facet_wrap( ~ Study, scales='free',ncol = 2) +
   #scale_fill_brewer(palette="Dark2") +
@@ -315,5 +331,4 @@ ggplot(microbiome_phylum_sum, aes(x = ID, y = percentage, fill = Phylum)) +
   scale_fill_tableau("Tableau 20") +
   ggtitle("Microbiome composition in by treatment (only taxa > 1% per sample)") +
   xlab('Sample ID') +
-  ylab('Relative abundance') 
-
+  ylab('Relative abundance')
