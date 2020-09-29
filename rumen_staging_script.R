@@ -48,7 +48,7 @@ AMR_exploratory_analyses = list(
     name = 'Study',
     subsets = list(),
     exploratory_var = 'Study',
-    order = ''
+    order = c("Hess","Shi","Stewart","Wallace")
   ),
   # Analysis
   # Description:
@@ -117,7 +117,7 @@ microbiome_exploratory_analyses = list(
     name = 'Study',
     subsets = list(),
     exploratory_var = 'Study',
-    order = ''
+    order = c("Hess","Shi","Stewart","Wallace")
   ),
   # Analysis
   # Description:
@@ -221,9 +221,12 @@ megares_annotation_filename = 'data/amr/megares_modified_annotations_v2.0.csv'
 source('scripts/metagenomeSeq_megaresv2.R')
 # Save MRExperiments to another object
 MEGARes_MRexperiment <- amr
+MEGARes_analytic_data <- AMR_analytic_data
+MEGARes_melted_analytic <- amr_melted_analytic
+
 
 # Running the following command creates exploratory figures and outputs count matrices
-source('scripts/print_AMR_figures.R')
+#source('scripts/print_AMR_figures.R')
 # NOTE!
 ##
 ### After creating the exploratory figures, you'll need to rename the following folders; "graphs/" and "amr_matrices"
@@ -234,6 +237,9 @@ amr_count_matrix_filepath = 'ACLAME_rumen_analytic_matrix.csv'
 megares_annotation_filename = 'data/amr/aclame_db_annotations.csv'
 source('scripts/metagenomeSeq_megaresv2.R')
 ACLAME_MRexperiment <- amr
+ACLAME_analytic_data <- AMR_analytic_data
+ACLAME_melted_analytic <- amr_melted_analytic
+
 # NOTE!
 ##
 ### After creating the exploratory figures, you'll need to rename the following folders; "graphs/" and "amr_matrices"
@@ -245,6 +251,9 @@ amr_count_matrix_filepath = 'ICEBerg_AMR_analytic_matrix.csv'
 megares_annotation_filename = 'data/amr/ICEBerg_db_annotations.csv'
 source('scripts/metagenomeSeq_megaresv2.R')
 ICEBerg_MRexperiment <- amr
+ICEBerg_analytic_data <- AMR_analytic_data
+ICEBerg_melted_analytic <- amr_melted_analytic
+
 # NOTE!
 ##
 ### After creating the exploratory figures, you'll need to rename the following folders; "graphs/" and "amr_matrices"
@@ -283,6 +292,7 @@ source('scripts/print_microbiome_figures.R')
 
 setkey(amr_melted_raw_analytic,ID)
 setkey(amr_melted_analytic,ID)
+setkey(ACLAME_melted_analytic,ID)
 
 setkey(microbiome_melted_analytic,ID)
 # Set keys for both metadata files
@@ -290,7 +300,8 @@ setkey(metadata,ID)
 setkey(microbiome_metadata,ID)
 microbiome_melted_analytic <- microbiome_melted_analytic[microbiome_metadata]
 amr_melted_raw_analytic <- amr_melted_raw_analytic[metadata]
-amr_melted_analytic <- amr_melted_analytic[metadata]
+
+amr_melted_analytic <- ACLAME_melted_analytic[metadata]
 
 
 ## Microbiome counts
