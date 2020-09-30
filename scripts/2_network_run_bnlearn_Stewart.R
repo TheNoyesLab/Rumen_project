@@ -5,12 +5,12 @@
 
 library(bnlearn)
 library(parallel)
-library(Rgraphviz)
+#library(Rgraphviz)
 
 #
 ## Wallace 
 #
-counts <- read.csv(file="dicho_Wallace_samples_genusmicro_aclame_iceberg_megaresgroup.csv", row.names=1,header=TRUE)
+counts <- read.csv(file="dicho_Stewart_samples_genusmicro_aclame_iceberg_megaresgroup.csv", row.names=1,header=TRUE)
 
 columns <- colnames(counts)
 counts[, columns] <- lapply(columns, function(x) as.numeric(counts[[x]]))
@@ -40,4 +40,4 @@ fitted.hybrid.group <- bn.fit(avg.boot.hc.dag.hybrid.group,counts)
 # plot(d.gph.hybrid.group, nodeAttrs=makeNodeAttrs(d.gph.hybrid.group, fontsize=34))
 # dev.off()
 
-save.image(file="network_Wallace_100rep_dicho_all_rumen_data.RData")
+save.image(file="network_Stewart_100rep_dicho_all_rumen_data.RData")
